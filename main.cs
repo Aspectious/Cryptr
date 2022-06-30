@@ -7,11 +7,11 @@ namespace Cryptr
         static void Main(string[] args)
         {
             Console.WriteLine("Cryptr Cipher Codec by Sudo");
-            Console.WriteLine();
             Show_mainmenu(1);
         }
-        static void Show_mainmenu(int num)
+        public static void Show_mainmenu(int num)
         {
+            Console.WriteLine();
             if (num == 1)
             {
                 Console.WriteLine("Welcome User, what would you like to do? (Encrypt/Decrypt):");
