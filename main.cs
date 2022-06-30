@@ -14,10 +14,10 @@ namespace Cryptr
             Console.WriteLine();
             if (num == 1)
             {
-                Console.WriteLine("Welcome User, what would you like to do? (Encrypt/Decrypt):");
+                Console.WriteLine("Welcome User, what would you like to do? (Encrypt/Decrypt/Quit):");
             } else
             {
-                Console.WriteLine("What would you like to do? (Encrypt/Decrypt):");
+                Console.WriteLine("What would you like to do? (Encrypt/Decrypt/Quit):");
             }
             var raw_decisison = Console.ReadLine();
             bool finaldecision;
@@ -31,6 +31,11 @@ namespace Cryptr
             {
                 finaldecision = false;
                 console.menu(finaldecision);
+            } else if (raw_decisison.ToLower().StartsWith("q"))
+            {
+                Console.WriteLine("Goodbye!");
+                Console.WriteLine(" -- END OF LINE -- ");
+                return;
             } else
             {
                 Console.WriteLine("Sorry, I did not get that. Could you please try again?");

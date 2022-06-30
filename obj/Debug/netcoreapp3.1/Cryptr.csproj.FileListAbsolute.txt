@@ -4,7 +4,6 @@ D:\Projects\Applications\Cryptr\bin\Debug\netcoreapp3.1\Cryptr.runtimeconfig.jso
 D:\Projects\Applications\Cryptr\bin\Debug\netcoreapp3.1\Cryptr.runtimeconfig.dev.json
 D:\Projects\Applications\Cryptr\bin\Debug\netcoreapp3.1\Cryptr.dll
 D:\Projects\Applications\Cryptr\bin\Debug\netcoreapp3.1\Cryptr.pdb
-D:\Projects\Applications\Cryptr\obj\Debug\netcoreapp3.1\Cryptr.csproj.AssemblyReference.cache
 D:\Projects\Applications\Cryptr\obj\Debug\netcoreapp3.1\Cryptr.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projects\Applications\Cryptr\obj\Debug\netcoreapp3.1\Cryptr.AssemblyInfoInputs.cache
 D:\Projects\Applications\Cryptr\obj\Debug\netcoreapp3.1\Cryptr.AssemblyInfo.cs
@@ -14,3 +13,4 @@ D:\Projects\Applications\Cryptr\obj\Debug\netcoreapp3.1\Cryptr.pdb
 D:\Projects\Applications\Cryptr\obj\Debug\netcoreapp3.1\Cryptr.genruntimeconfig.cache
 D:\Projects\Applications\Cryptr\obj\Debug\netcoreapp3.1\Cryptr.algorithms.resources
 D:\Projects\Applications\Cryptr\obj\Debug\netcoreapp3.1\Cryptr.csproj.GenerateResource.cache
+D:\Projects\Applications\Cryptr\obj\Debug\netcoreapp3.1\cryptr.csproj.AssemblyReference.cache

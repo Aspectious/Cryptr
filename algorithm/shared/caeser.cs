@@ -22,7 +22,7 @@ namespace Cryptr.algorithm.shared
                     
                     output = output + new String(messageasarray[i],1);
                 }
-                for (int b=0;b<alphabetarray.Length - 1;b++)
+                for (int b=0;b<alphabetarray.Length;b++)
                 {
                     if (alphabetarray[b] == messageasarray[i]) {
                         Console.WriteLine("MATCH! Message character: " + messageasarray[i] + ", Character: " + alphabetarray[b]);
@@ -112,7 +112,6 @@ namespace Cryptr.algorithm.shared
 
             return output;
 
-            return null;
         }
     }
 }

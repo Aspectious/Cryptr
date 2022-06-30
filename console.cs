@@ -10,25 +10,68 @@ namespace Cryptr
         {
             if (mode == true) // Did the user enter "Encrypt" on the previous menu?
             {
-                Console.WriteLine("ENCRYPT Selected. What algorithm would you like to use?");
-                string j = Console.ReadLine();
-                string h = algorithm.shared.caeser.encrypt(5,true,j);
-                Console.WriteLine("Original Statement: " + j);
+                Console.WriteLine("ENCRYPT Selected. Please Select a Direction, Left or Right.");
+                string direction = Console.ReadLine();
+                bool dir;
+                Console.WriteLine("ENCRYPT Selected. Please Enter the key you wish to use.");
+                int KEY = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("ENCRYPT Selected. Please Enter Your Text.");
+                string messagetoencrypt = Console.ReadLine();
+
+                if (direction.ToLower().StartsWith("l"))
+                {
+                    dir = false;
+                } else
+                {
+                    dir = true;
+                }
+                string h = algorithm.shared.caeser.encrypt(KEY,dir,messagetoencrypt);
+
+
+                /* Why did I make this? */
+                Console.WriteLine();
+                Console.WriteLine(" -- Algorithm Completed! -- ");
+                Console.WriteLine();
+                Console.WriteLine("Original Statement: " + messagetoencrypt);
                 Console.WriteLine("Final    Statement: " + h);
+                Console.WriteLine();
+                Console.WriteLine("-- END OF LINE --");
                 main.Show_mainmenu(0);
             } else if (mode == false) // Or did they enter "Decrypt"?
             {
-                Console.WriteLine("DECRYPT Selected. What algorithm would you like to use?");
+                Console.WriteLine("ENCRYPT Selected. Please Select a Direction, Left or Right.");
+                string direction = Console.ReadLine();
+                bool dir;
+                Console.WriteLine("ENCRYPT Selected. Please Enter the key you wish to use.");
+                int KEY = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("ENCRYPT Selected. Please Enter Your Text.");
+                string messagetoencrypt = Console.ReadLine();
+
+                if (direction.ToLower().StartsWith("l"))
+                {
+                    dir = false;
+                }
+                else
+                {
+                    dir = true;
+                }
+                string h = algorithm.shared.caeser.decrypt(KEY, dir, messagetoencrypt);
+
+
+                /* Why did I make this? */
+                Console.WriteLine();
+                Console.WriteLine(" -- Algorithm Completed! -- ");
+                Console.WriteLine();
+                Console.WriteLine("Original Statement: " + messagetoencrypt);
+                Console.WriteLine("Final    Statement: " + h);
+                Console.WriteLine();
+                Console.WriteLine("-- END OF LINE --");
+                main.Show_mainmenu(0);
             }
         }
         public static void ListAlgorithms()
         {
 
-        }
-        static void ListStatisticsAndKill(bool MODE, string originalmessage, string finalmessage, string algorithm )
-        {
-            Console.WriteLine("-- Statistics -- ");
-            Console.WriteLine();
         }
         public static void FetchAlgorithm(int Algorithm) // Load the algorithm class
         {
